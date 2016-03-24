@@ -47,6 +47,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [QSA,L]
 ```
 
+**Note**: If you need flight to be in a sundirectory add the line `RewriteBase /flight/` just after `RewriteEngine On`
+
 For *Nginx*, add the following to your server declaration:
 
 ```
